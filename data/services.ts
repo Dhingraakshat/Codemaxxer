@@ -20,6 +20,33 @@ export const aiCapabilities = [
   'Predictive Analytics',
 ];
 
+export const appDevCapabilities = [
+  'iOS & Android Native Apps',
+  'Cross-Platform (React Native / Flutter)',
+  'App Store Deployment',
+  'Offline-First Architecture',
+  'Push Notifications & Real-Time Sync',
+  'Mobile Payment Integration',
+];
+
+export const cloudCapabilities = [
+  'Cloud Architecture & Migration',
+  'AWS / Azure / GCP Infrastructure',
+  'Data Warehousing & Analytics',
+  'Real-Time Dashboards',
+  'CI/CD & DevOps Pipelines',
+  'Cost Optimisation',
+];
+
+export const innovativeCapabilities = [
+  'Emerging Tech Exploration',
+  'Product Strategy & Prototyping',
+  'Technical Feasibility Studies',
+  'Innovation Sprints',
+  'R&D Partnerships',
+  'Startup CTO Advisory',
+];
+
 export const webAppSubServices = [
   { title: 'SaaS Platforms', desc: 'Multi-tenant, scalable SaaS products built for growth from day one.' },
   { title: 'E-commerce Solutions', desc: 'High-converting storefronts with custom checkout and inventory management.' },

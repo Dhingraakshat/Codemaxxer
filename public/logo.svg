@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none">
+  <!-- Neural network node graph -->
+  <!-- Center node -->
+  <circle cx="100" cy="38" r="5" fill="#F5C518"/>
+  <!-- Left node -->
+  <circle cx="72" cy="28" r="4.5" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="1.5"/>
+  <circle cx="72" cy="28" r="4.5" fill="currentColor" opacity="0"/>
+  <!-- Top-left node -->
+  <circle cx="68" cy="22" r="4" fill="#0A0A0A" stroke="#111" stroke-width="1"/>
+
+  <!-- Nodes - dark filled circles with black outline (logo is on white in image) -->
+  <!-- Redraw for dark bg version -->
+  <circle cx="72" cy="24" r="5" fill="#1A1A1A" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="72" cy="52" r="5" fill="#1A1A1A" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="100" cy="38" r="6" fill="#F5C518"/>
+
+  <!-- Connector lines -->
+  <line x1="77" y1="24" x2="94" y2="35" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="77" y1="52" x2="94" y2="41" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Double arrow >> -->
+  <polyline points="106,30 116,38 106,46" fill="none" stroke="#F5C518" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="114,30 124,38 114,46" fill="none" stroke="#F5C518" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Closing bracket } -->
+  <path d="M128 26 Q134 26 134 32 L134 35 Q134 38 130 38 Q134 38 134 41 L134 44 Q134 50 128 50" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- CODEMAXXERS text -->
+  <!-- CODE -->
+  <text x="14" y="78" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5" fill="#ffffff">CODE</text>
+  <!-- MA -->
+  <text x="80" y="78" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5" fill="#ffffff">MA</text>
+  <!-- XX in yellow -->
+  <text x="122" y="78" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5" fill="#F5C518">XX</text>
+  <!-- ERS -->
+  <text x="164" y="78" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5" fill="#ffffff">ERS</text>
+
+  <!-- Tagline -->
+  <text x="14" y="94" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#999999">WEB DEVELOPMENT &amp; AI SOLUTIONS</text>
+</svg>

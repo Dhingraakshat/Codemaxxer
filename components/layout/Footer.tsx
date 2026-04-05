@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { GitBranch, ExternalLink, X, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
@@ -32,13 +33,16 @@ export default function Footer() {
       <div className="px-6 md:px-12 lg:px-24 pt-20 pb-12 border-b border-[#161616]">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
           <div>
-            <div
-              className="font-syne font-extrabold text-white leading-none select-none flex items-baseline"
-              style={{ fontSize: 'clamp(36px, 6vw, 68px)', letterSpacing: '-0.03em' }}
-            >
-              <span>CODEMA</span>
-              <span className="logo-xx">XX</span>
-              <span>ERS</span>
+            <div className="flex items-center gap-4 mb-2">
+              <Image src="/favicon.svg" alt="Codemaxxers" width={48} height={48} className="opacity-90" />
+              <div
+                className="font-syne font-extrabold text-white leading-none select-none flex items-baseline"
+                style={{ fontSize: 'clamp(28px, 4.5vw, 52px)', letterSpacing: '-0.03em' }}
+              >
+                <span>CODEMA</span>
+                <span className="logo-xx">XX</span>
+                <span>ERS</span>
+              </div>
             </div>
             <p className="text-white-muted mt-3 text-sm max-w-xs leading-relaxed">
               Building the software that drives the future — one exceptional product at a time.

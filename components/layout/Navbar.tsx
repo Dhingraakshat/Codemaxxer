@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X as CloseIcon, ChevronDown, Code2, Brain } from 'lucide-react';
+import { Menu, X as CloseIcon, ChevronDown, Code2, Brain, Smartphone, Cloud, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
@@ -11,25 +12,17 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services', hasDropdown: true },
-  { label: 'Work', href: '/work' },
   { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Careers', href: '/careers' },
 ];
 
 const serviceLinks = [
-  {
-    label: 'Web App Development',
-    href: '/services/web-apps',
-    icon: Code2,
-    desc: 'SaaS, dashboards, APIs & more',
-  },
-  {
-    label: 'AI Solutions',
-    href: '/services/ai',
-    icon: Brain,
-    desc: 'LLMs, automation & ML pipelines',
-  },
+  { label: 'Web App Development', href: '/services/web-apps', icon: Code2, desc: 'SaaS, dashboards, APIs & more' },
+  { label: 'AI Solutions', href: '/services/ai', icon: Brain, desc: 'LLMs, automation & ML pipelines' },
+  { label: 'App Development', href: '/services/app-development', icon: Smartphone, desc: 'iOS, Android, React Native, Flutter' },
+  { label: 'Cloud & Data Analytics', href: '/services/cloud-analytics', icon: Cloud, desc: 'AWS, Azure, GCP, dashboards' },
+  { label: 'Innovative Solutions', href: '/services/innovative-solutions', icon: Lightbulb, desc: "Prototyping, R&D, CTO advisory" },
 ];
 
 export default function Navbar() {
@@ -61,11 +54,17 @@ export default function Navbar() {
       >
         <div className="px-6 md:px-12 lg:px-24 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="font-syne font-extrabold text-white tracking-tight group flex items-center" style={{ fontSize: '1.15rem', letterSpacing: '-0.02em' }}>
-            <span className="text-yellow mr-1.5 opacity-60 text-xs font-mono">&gt;_</span>
-            <span>CODEMA</span>
-            <span className="logo-xx">XX</span>
-            <span>ERS</span>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <Image
+              src="/favicon.svg"
+              alt="Codemaxxers icon"
+              width={28}
+              height={28}
+              className="opacity-90 group-hover:opacity-100 transition-opacity"
+            />
+            <span className="font-syne font-extrabold text-white tracking-tight flex items-center" style={{ fontSize: '1.1rem', letterSpacing: '-0.02em' }}>
+              CODEMA<span className="logo-xx">XX</span>ERS
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -94,9 +93,10 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-80 bg-black-soft border border-[#2A2A2A] rounded-lg p-3 shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[520px] bg-[#0D0D0D] border border-[#242424] rounded-xl p-3 shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
                       >
-                        <div className="space-y-2">
+                        <p className="text-white-muted text-[10px] font-syne uppercase tracking-[0.15em] px-3 pb-2 pt-1">Our Services</p>
+                        <div className="grid grid-cols-2 gap-1">
                           {serviceLinks.map((s) => (
                             <Link
                               key={s.href}

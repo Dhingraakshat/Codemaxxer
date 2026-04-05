@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     'Codemaxxers is an elite IT company specializing in web application development and AI solutions. We build the software that drives the future.',
   keywords: ['web development', 'AI solutions', 'SaaS', 'next.js', 'machine learning', 'software agency'],
   authors: [{ name: 'Codemaxxers' }],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Codemaxxers — Web App Development & AI Solutions',
     description: 'We build the software that drives the future.',
