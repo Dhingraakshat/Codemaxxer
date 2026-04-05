@@ -10,7 +10,7 @@ import Button from '@/components/ui/Button';
 import Section from '@/components/layout/Section';
 
 const milestones = [
-  { year: '2019', event: 'Founded with a vision to make elite software development accessible to every ambitious business.' },
+  { year: '2026', event: 'Founded with a vision to make elite software development accessible to every ambitious business.' },
   { year: '2020', event: 'Landed first Fortune 500 client. Went fully remote from day one. Team of 5.' },
   { year: '2021', event: 'Launched AI practice. Delivered 15+ projects across FinTech, HealthTech, and EdTech.' },
   { year: '2023', event: 'Crossed $2M ARR. Expanded to 15 engineers. Opened Cloud & Data Analytics practice.' },
@@ -108,7 +108,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 gap-3">
               {[
-                { icon: Calendar, label: 'Founded', value: '2019' },
+                { icon: Calendar, label: 'Founded', value: '2026' },
                 { icon: MapPin, label: 'Setup', value: 'Remote-First' },
                 { icon: Users, label: 'Clients', value: '50+ Served' },
                 { icon: Globe, label: 'Reach', value: 'Worldwide' },
