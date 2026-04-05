@@ -1,36 +1,13 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import { useInView, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const stats = [
-  { value: 50, suffix: '+', label: 'Projects Delivered', desc: 'shipped & scaling' },
-  { isStatic: true, staticValue: '2026', label: 'Founded', desc: 'fresh & ambitious' },
-  { value: 98, suffix: '%', label: 'Client Satisfaction', desc: 'across all projects' },
-  { isStatic: true, staticValue: '24/7', label: 'Support', desc: 'always available' },
+  { staticValue: '5', label: 'Service Practices', desc: 'web · AI · cloud · mobile · R&D' },
+  { staticValue: '2026', label: 'Founded', desc: 'fresh & ambitious' },
+  { staticValue: '<24h', label: 'Response Time', desc: 'every inquiry answered' },
+  { staticValue: '24/7', label: 'Support', desc: 'always available' },
 ];
-
-function CountUp({ target, suffix, duration = 1800 }: { target: number; suffix: string; duration?: number }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (!inView) return;
-    let start = 0;
-    const steps = 60;
-    const increment = target / steps;
-    const interval = duration / steps;
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= target) { setCount(target); clearInterval(timer); }
-      else setCount(Math.floor(start));
-    }, interval);
-    return () => clearInterval(timer);
-  }, [inView, target, duration]);
-
-  return <span ref={ref}>{count}{suffix}</span>;
-}
 
 export default function StatsSection() {
   return (
@@ -60,7 +37,7 @@ export default function StatsSection() {
                 className="stat-number mb-1 relative z-10"
                 style={{ fontSize: 'clamp(40px, 5vw, 64px)' }}
               >
-                {stat.isStatic ? stat.staticValue : <CountUp target={stat.value!} suffix={stat.suffix!} />}
+                {stat.staticValue}
               </div>
               <p className="text-white font-syne font-semibold text-sm mb-0.5 relative z-10">{stat.label}</p>
               <p className="text-white-muted text-xs relative z-10">{stat.desc}</p>

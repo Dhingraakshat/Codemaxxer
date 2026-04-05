@@ -99,7 +99,7 @@ export default function Footer() {
             <h4 className="font-syne font-bold text-white mb-5 text-xs uppercase tracking-[0.15em]">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2.5 text-white-muted text-sm"><Mail className="w-3.5 h-3.5 text-yellow flex-shrink-0" />hello@codemaxxers.com</li>
-              <li className="flex items-center gap-2.5 text-white-muted text-sm"><Phone className="w-3.5 h-3.5 text-yellow flex-shrink-0" />+1 (555) 000-0000</li>
+              <li className="flex items-center gap-2.5 text-white-muted text-sm"><Phone className="w-3.5 h-3.5 text-yellow flex-shrink-0" />+371 25138257</li>
               <li className="flex items-center gap-2.5 text-white-muted text-sm"><MapPin className="w-3.5 h-3.5 text-yellow flex-shrink-0" />Remote-First, Worldwide</li>
             </ul>
           </div>
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="flex items-center gap-2.5">
           {[
             { icon: GitBranch, href: 'https://github.com', label: 'GitHub' },
-            { icon: ExternalLink, href: 'https://linkedin.com', label: 'LinkedIn' },
+            { icon: ExternalLink, href: 'https://www.linkedin.com/company/codemaxxers', label: 'LinkedIn' },
             { icon: X, href: 'https://twitter.com', label: 'Twitter' },
           ].map(({ icon: Icon, href, label }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}

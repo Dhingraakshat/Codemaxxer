@@ -274,7 +274,7 @@ export default function CostEstimator() {
               <Button href="/contact" size="lg" className="btn-pulse">
                 Claim Your 50% Discount
               </Button>
-              <Button href="#estimator" variant="secondary" size="lg">
+              <Button href="/estimate" variant="secondary" size="lg">
                 Calculate Your Price
               </Button>
             </motion.div>

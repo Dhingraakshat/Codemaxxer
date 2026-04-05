@@ -10,11 +10,11 @@ import Button from '@/components/ui/Button';
 import Section from '@/components/layout/Section';
 
 const milestones = [
-  { year: '2026', event: 'Founded with a vision to make elite software development accessible to every ambitious business.' },
-  { year: '2020', event: 'Landed first Fortune 500 client. Went fully remote from day one. Team of 5.' },
-  { year: '2021', event: 'Launched AI practice. Delivered 15+ projects across FinTech, HealthTech, and EdTech.' },
-  { year: '2023', event: 'Crossed $2M ARR. Expanded to 15 engineers. Opened Cloud & Data Analytics practice.' },
-  { year: '2024', event: 'Serving 50+ clients globally. Recognized as a top AI & web agency by TechCrunch.' },
+  { year: 'Q1 2026', event: 'Founded with a clear vision — make elite software and AI development accessible to every ambitious business worldwide.' },
+  { year: 'Q2 2026', event: 'Launched five core service practices: Web App Development, AI Solutions, Mobile, Cloud & Data Analytics, and Innovative Solutions.' },
+  { year: 'Q3 2026', event: 'First client projects underway. Remote-first team assembled across Europe. Rapid delivery model established.' },
+  { year: 'Q4 2026', event: 'Expanding into new verticals — FinTech, HealthTech, and EdTech — with tailored solutions for each domain.' },
+  { year: '2027', event: 'Scaling the team and capability. Goal: become the go-to AI & web agency for growth-stage companies globally.' },
 ];
 
 const values = [
@@ -110,7 +110,7 @@ export default function AboutPage() {
               {[
                 { icon: Calendar, label: 'Founded', value: '2026' },
                 { icon: MapPin, label: 'Setup', value: 'Remote-First' },
-                { icon: Users, label: 'Clients', value: '50+ Served' },
+                { icon: Users, label: 'Practices', value: '5 Services' },
                 { icon: Globe, label: 'Reach', value: 'Worldwide' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="bg-[#0F0F0F] border border-[#222] rounded-xl p-5 hover:border-yellow/30 transition-all duration-300">
@@ -211,7 +211,7 @@ export default function AboutPage() {
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 space-y-3">
             <motion.div variants={fadeUp}><Badge>Our Journey</Badge></motion.div>
             <motion.h2 variants={fadeUp} className="font-syne font-extrabold text-white" style={{ fontSize: 'clamp(22px,3vw,34px)', letterSpacing: '-0.02em' }}>
-              Five Years. <span className="text-yellow">One Mission.</span>
+              Day One. <span className="text-yellow">One Mission.</span>
             </motion.h2>
           </motion.div>
           <div className="space-y-0">

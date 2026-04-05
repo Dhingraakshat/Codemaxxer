@@ -187,7 +187,7 @@ export default function ContactPage() {
                 <h3 className="font-syne font-bold text-white text-lg">Get in Touch</h3>
                 {[
                   { icon: Mail, label: 'Email', value: 'hello@codemaxxers.com' },
-                  { icon: Phone, label: 'Phone', value: '+1 (555) 000-0000' },
+                  { icon: Phone, label: 'Phone', value: '+371 25138257' },
                   { icon: MapPin, label: 'Location', value: 'Remote-First, Worldwide' },
                   { icon: Clock, label: 'Response Time', value: 'Within 24 business hours' },
                 ].map((item) => (
@@ -219,7 +219,7 @@ export default function ContactPage() {
                 <div className="flex gap-3">
                   {[
                     { icon: GitBranch, label: 'GitHub', href: 'https://github.com' },
-                    { icon: LinkIcon, label: 'LinkedIn', href: 'https://linkedin.com' },
+                    { icon: LinkIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/company/codemaxxers' },
                     { icon: X, label: 'Twitter', href: 'https://twitter.com' },
                   ].map(({ icon: Icon, label, href }) => (
                     <a key={label} href={href} target="_blank" rel="noopener noreferrer"
